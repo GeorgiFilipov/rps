@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
+	"main/config"
 	"main/model"
 	"main/repository"
 	"net/http"
@@ -29,6 +30,13 @@ func (regHandler *RegistrationHandler) Handle(context *gin.Context) {
 	err := context.BindJSON(&registration)
 	if err != nil {
 		context.AbortWithStatusJSON(http.StatusBadRequest, err.Error())
+		return
+	}
+
+	if registration.Deposit < config.Settings.MinimumDeposit {
+		logrus.Error("Deposit below minimum")
+		context.AbortWithStatusJSON(http.StatusBadRequest,
+			fmt.Sprintf("Deposit must be at least %d", config.Settings.MinimumDeposit))
 		return
 	}
 
