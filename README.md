@@ -16,6 +16,7 @@ You can make request to localhost:9000
 3. you`ll get a Bearer token back, use it to authenticate for the other requests
 
 - Challeging players can be done via POST **/challenge** with a **model.ChallengeRequest**
+  - the choice is between 1 and 3 for **rock=1**, **paper=2**, **scissors=3**
 - A player can view his active pendindg challenges via GET **/challenge/pending** no need to pass anything but the Bearer token, it will get the relevant data from the db
 - You can query for all players wit GET **/players** this will return all of the registered player usernames
 - Accepting a challenge is done via POST **/challenge/settle** with **model.ChallengeSettleRequest**
