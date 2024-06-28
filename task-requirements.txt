@@ -1,0 +1,19 @@
+Requirements:
+- Login the system and logout -> auth module
+- Transfer imaginary funds in and out of your account. ->
+- Query for other players
+- Challenge other players to a match and associate a choice (rock, paper or scissor) and a bet with it
+- View your pending challenges and respond to them with decline or accepting. Accepting requires a choice of rock, paper, scissor
+- Upon accepting a challenge, the match is resolved and the bet funds are transferred from the loser to the winner.
+
+Extra tasks - you can choose any and all you like:
+- Users require registration and this is kept in some kind of database
+- All transactions are logged in a database
+- Query for personal transactions
+- AI players
+- Users are somehow notified if they win or lose
+- Statistics are generated and can be viewed somehow
+- Available choices should be configurable (add more than rock paper scissor)
+
+Not completing extra tasks will not be counted as a negative, however it is preferable to at least complete a few.
+Less, but well-done extra tasks will be counted more highly than many but worse in quality.

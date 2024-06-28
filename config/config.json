@@ -1,0 +1,19 @@
+{
+  "db_user" : "postgres",
+  "db_pass" : "happylucky",
+  "db_port" : 5432,
+  "db_name" : "elysium",
+
+  "server_port" : "9000",
+
+  "minimum_deposit": 100,
+  "minimum_bet" : 1,
+
+  "minimum_password_length": 5,
+  "minimum_name_length" : 5,
+  "maximum_name_length" : 15,
+
+  "secret_key" : "secret",
+
+  "max_token_life_minutes" : 60
+}
