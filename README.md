@@ -12,8 +12,21 @@ go run .
 You can make request to localhost:9000
 
 1. you need to register a user via **/registration**
-2. login via **login** with your credentials
-3. you`ll get a Bearer token back, use it to authenticate for the other requests
+  example: {
+   "username" : "peter_griffin",		
+	  "password" : "random123",
+   	"deposit" : 500	
+ }
+
+3. login via **login** with your credentials
+ {
+   "username" : "peter_griffin",		
+	  "password" : "random123"
+}
+5. you`ll get a Bearer token back, use it to authenticate for the other requests
+	"token": **"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJicnlhbmciLCJleHAiOjE3MTk1Nzg5Njl9.qbtAmYouJAUcEHgt1hK4HAsXwfuhPgowptTkZkRPxe0"**
+All authenticated requests will need to have 
+"Authentication" : "Bearer **"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJicnlhbmciLCJleHAiOjE3MTk1Nzg5Njl9.qbtAmYouJAUcEHgt1hK4HAsXwfuhPgowptTkZkRPxe0"**" (updated the token with a valid one)
 
 - Challeging players can be done via POST **/challenge** with a **model.ChallengeRequest**
   - the choice is between 1 and 3 for **rock=1**, **paper=2**, **scissors=3**
