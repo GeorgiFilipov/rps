@@ -32,7 +32,7 @@ You can make request to localhost:9000
     "password" : "random123"
    }
 ```
-5. you`ll get a Bearer token back, use it to authenticate for the other requests
+3. you`ll get a Bearer token back, use it to authenticate for the other requests
 ```json
    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJicnlhbmciLCJleHAiOjE3MTk1Nzg5Njl9.qbtAmYouJAUcEHgt1hK4HAsXwfuhPgowptTkZkRPxe0"
 ```
